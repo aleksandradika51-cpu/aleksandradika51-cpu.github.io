@@ -1,21 +1,9 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-</head>
-
-<body>
-<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>Kedai Apple - Tempat Segar dan Lezat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dika aleksandra</title>
 
     <style>
         * {
@@ -23,169 +11,117 @@
         }
 
         body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            color: #292929;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #e0c3fc, #c2a0e8, #f5e6ff);
+    color: #493267;
+}
 
-            /* BACKGROUND */
-            background:
-                linear-gradient(
-                    rgba(255, 255, 255, 0.82),
-                    rgba(255, 255, 255, 0.82)
-                ),
-                url("https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=1200&q=80");
-
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }
-
-        /* CONTAINER */
-        .container {
-            max-width: 900px;
-            margin: auto;
-            min-height: 100vh;
-            background: rgba(255, 255, 255, 0.65);
-        }
-
-        /* HEADER */
-        header {
-            text-align: center;
-            padding: 25px 20px 10px;
-        }
-
-        /* LOGO */
-        .logo {
-            font-size: 70px;
-            line-height: 1;
-            margin-bottom: 8px;
-            filter: drop-shadow(0 3px 3px rgba(0,0,0,0.2));
-        }
-
-        .logo-text {
-            font-size: 20px;
-            font-weight: bold;
-            letter-spacing: 2px;
-        }
-
-        /* NAVIGASI */
         nav {
             text-align: center;
-            padding: 15px;
-            border-bottom: 1px solid rgba(0,0,0,0.2);
+            margin-bottom: 25px;
+            font-size: 16px;
         }
 
         nav a {
-            color: #b42323;
+            color: #80694c;
+            text-decoration: none;
             font-weight: bold;
-            text-decoration: underline;
-            margin: 0 5px;
+            margin: 5px;
         }
 
-        /* HERO */
-        .hero {
+        .biodata {
+            max-width: 550px;
+            margin: 35px auto;
+            padding: 30px 25px;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(100, 80, 50, 0.13);
+            border-top: 6px solid #b69b78;
+        }
+
+        .biodata h2 {
             text-align: center;
-            padding: 35px 25px 30px;
+            color: #80694c;
+            font-size: 26px;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
         }
 
-        .hero h1 {
-            font-size: 42px;
-            font-weight: normal;
-            margin: 0 0 25px;
+        .foto {
+            width: 155px;
+            height: 155px;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+            margin: 20px auto;
+            border: 5px solid #d8c6a0;
+            box-shadow: 0 5px 15px rgba(100, 80, 50, 0.15);
         }
 
-        .hero p {
-            font-size: 22px;
-            font-style: italic;
-            line-height: 1.7;
-            margin: 0;
-        }
-
-        /* CONTENT */
-        .content {
-            padding: 30px;
-            border-top: 1px solid rgba(0,0,0,0.25);
-        }
-
-        .content p {
-            font-size: 21px;
-            line-height: 1.8;
-            margin-top: 0;
-        }
-
-        /* JUDUL */
-        h2 {
-            font-size: 32px;
-            margin-top: 30px;
-            margin-bottom: 20px;
-        }
-
-        /* MENU */
-        .menu {
-            font-size: 21px;
-            line-height: 1.8;
-        }
-
-        .menu ul {
-            padding-left: 35px;
-        }
-
-        .menu li {
-            margin-bottom: 5px;
-        }
-
-        /* KARTU MENU */
-        .menu-card {
-            background: rgba(255, 255, 255, 0.7);
-            border-radius: 15px;
-            padding: 15px 20px;
-            margin: 15px 0;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-        }
-
-        .harga {
-            float: right;
-            font-weight: bold;
-            color: #b42323;
-        }
-
-        /* FOOTER */
-        footer {
-            text-align: center;
-            color: #666;
+        .isi-biodata h3 {
+            color: #80694c;
             font-size: 18px;
-            padding: 35px 15px 20px;
+            margin-top: 28px;
+            padding: 12px;
+            background: #f4eee5;
+            border-left: 5px solid #b69b78;
+            border-radius: 8px;
         }
 
-        /* RESPONSIVE HP */
-        @media (max-width: 600px) {
+        .isi-biodata p {
+            padding: 12px;
+            margin: 8px 0;
+            background: #faf8f4;
+            border-radius: 9px;
+            border-bottom: 1px solid #eee5d8;
+            line-height: 1.6;
+            font-size: 14px;
+        }
 
-            .hero h1 {
-                font-size: 36px;
+        .isi-biodata p b {
+            color: #80694c;
+        }
+
+        .isi-biodata p:hover {
+            background: #f1e9dc;
+            transition: 0.3s;
+        }
+
+        .praktikum {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .praktikum a {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #80694c;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+
+        .praktikum a:hover {
+            background: #b69b78;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 12px;
             }
 
-            .hero p {
-                font-size: 20px;
+            .biodata {
+                padding: 22px 16px;
             }
 
-            .content {
-                padding: 25px;
+            .biodata h2 {
+                font-size: 23px;
             }
 
-            .content p {
-                font-size: 19px;
-            }
-
-            h2 {
-                font-size: 29px;
-            }
-
-            .menu {
-                font-size: 19px;
-            }
-
-            .logo {
-                font-size: 60px;
+            .isi-biodata p {
+                font-size: 13px;
             }
         }
     </style>
@@ -193,142 +129,67 @@
 
 <body>
 
-<div class="container">
+    <nav>
+        <a href="/">HOME</a> |
+        <a href="#profil">PROFIL</a> |
+        <a href="#praktikum">PRAKTIKUM</a>
+    </nav>
 
-    <!-- HEADER -->
-    <header>
+    <h2 style="text-align:center;">Repository Utama</h2>
 
-        <!-- LOGO -->
-        <div class="logo">🍎</div>
+    <section class="biodata" id="profil">
 
-        <div class="logo-text">
-            KEDAI APPLE
-        </div>
+        <h2>BIODATA DIRI</h2>
 
-        <!-- NAVIGASI -->
-        <nav>
-            <a href="index.html">Beranda</a>
-            |
-            <a href="jadwal.html">Jadwal Operasional</a>
-        </nav>
+        <img
+            src="727BE12E-F10F-4C31-B02E-50699A0A1907.png"
+            class="foto"
+            alt="Foto ADIYAKSA SUBHI"
+        >
 
-    </header>
+        <div class="isi-biodata">
 
+            <h3>Data Pribadi</h3>
 
-    <!-- HERO -->
-    <section class="hero">
+            <p><b>Nama:</b> Dika aleksandra</p>
 
-        <h1>
-            Selamat Datang di<br>
-            Kedai Apple
-        </h1>
+            <p><b>Tempat, Tanggal Lahir:</b>
+            Majalengka , 11 September 2009</p>
 
-        <p>
-            "Kesegaran apel terbaik untuk menemani
-            hari-harimu."
-        </p>
+            <p><b>Agama:</b> Islam</p>
 
-    </section>
+            <p><b>Kelas:</b> XI TJKT 2</p>
 
+            <p><b>Alamat:</b>
+            Desa parungjaya, Kec. leuwimunding,
+            Kab. Majalengka</p>
 
-    <!-- CONTENT -->
-    <section class="content">
+            <p><b>Hobi:</b> Maen game</p>
 
-        <p>
-            Kedai Apple didirikan sejak tahun 2026
-            untuk menyediakan berbagai olahan apel
-            yang segar, lezat, dan berkualitas.
-            Kami berkomitmen memberikan produk terbaik
-            dengan harga yang terjangkau bagi semua
-            pelanggan.
-        </p>
+            <h3>Riwayat Pendidikan</h3>
 
+            <p><b>SMK Negeri 1 Leuwimunding:</b>
+            2025-Sekarang</p>
 
-        <!-- MENU -->
-        <h2>
-            Menu Favorit Kami
-        </h2>
+            <p><b>SMP Negeri 3 Leuwimunding:</b>
+            2022-2025</p>
 
-        <div class="menu">
-
-            <div class="menu-card">
-                <strong>🍎 Minuman</strong>
-
-                <ul>
-                    <li>
-                        Jus Apel Segar
-                        <span class="harga">Rp10.000</span>
-                    </li>
-
-                    <li>
-                        Apple Tea
-                        <span class="harga">Rp12.000</span>
-                    </li>
-
-                    <li>
-                        Apple Smoothie
-                        <span class="harga">Rp15.000</span>
-                    </li>
-                </ul>
-            </div>
-
-
-            <div class="menu-card">
-                <strong>🍏 Makanan</strong>
-
-                <ul>
-                    <li>
-                        Pie Apel
-                        <span class="harga">Rp15.000</span>
-                    </li>
-
-                    <li>
-                        Roti Bakar Apel
-                        <span class="harga">Rp13.000</span>
-                    </li>
-
-                    <li>
-                        Salad Apel
-                        <span class="harga">Rp12.000</span>
-                    </li>
-                </ul>
-            </div>
-
-
-            <div class="menu-card">
-                <strong>🍎 Camilan</strong>
-
-                <ul>
-                    <li>
-                        Apel Potong
-                        <span class="harga">Rp8.000</span>
-                    </li>
-
-                    <li>
-                        Keripik Apel
-                        <span class="harga">Rp10.000</span>
-                    </li>
-                </ul>
-            </div>
+            <p><b>SD Negeri 1 Parunjaya:</b>
+            2016-2022</p>
 
         </div>
 
+        <br>
 
-    
+        <div class="praktikum" id="praktikum">
+            <h2>Menu Praktikum</h2>
+
+            <a href="https://adiyaksa-dot.github.io/praktikum-">
+                Kembali ke Website Praktikum.
+            </a>
         </div>
 
     </section>
 
-
-    <!-- FOOTER -->
-    <footer>
-        Created by Dika aleksandra @2026
-    </footer>
-
-</div>
-
 </body>
-</html>
-</body>
-
 </html>
